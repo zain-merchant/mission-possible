@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+  	<ion-title>Mission Possible</ion-title>
+    <ion-buttons end>
+      <button ion-button color="primary" (click)="logout()">Logout</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Feed" tabIcon="paper"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Ideas" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Tasks" tabIcon="bookmark"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="person"></ion-tab>
+</ion-tabs>
